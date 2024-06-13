@@ -72,9 +72,9 @@ La funcion sumaPrecio recibe dos parametros, producto y precio
 Uso producto para saber que producto se esta seleccionando
 Uso precio, para ir acumulando los precios de cada producto seleccionado
 */
-function sumaPrecio(producto, precio){
+function sumaPrecio(producto, precio) {
 
-    switch(producto){
+    switch (producto) {
         case "Sueter":
             return precio += 50000;
         case "Bufanda":
@@ -87,7 +87,7 @@ function sumaPrecio(producto, precio){
             return precio += 20000;
         default:
             alert("Opcion no valida!");
-            break; 
+            break;
     }
 }
 
@@ -95,7 +95,7 @@ function sumaPrecio(producto, precio){
 La funcion finalizarCompra recibe dos parametros, productos y precios
 Productos va a ser un string donde acumulamos todos los productos seleccionados, si no hay productos seleccionados tira un mensaje. Si hay productos seleccionados, muestra una lista de los productos seleccionados, muestro la acumulacion del precio de los productos(precioFinal)
 */
-function finalizarCompra(productos,precio) {
+function finalizarCompra(productos, precio) {
     if (!productos) {
         alert("No se ha seleccionado ningun producto");
     } else {
